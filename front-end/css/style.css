@@ -1,0 +1,68 @@
+ /*Para remover margem padrao do navegador*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ /*Fundo da tela e centralizar o conteudo da tag<main>*/
+body{
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+/*O cartao da seção de login*/
+#login {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    width: 100%;
+    max-width: 400px;
+}
+/*Estilo do cabeçalho*/
+#login header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+#login header h1 {
+    font-size: 24px;
+    color: #666666;
+    font-weight: normal;
+}
+#login header h2{
+    font-size: 14px;
+    color: #666666;
+    font-weight: normal;
+}
+/*Agrupei duas classes dps de muito sorfrimento (claude ensinou)*/
+.campodousuario, .campodesenha {
+    display: flex;
+    flex-direction: column; /*coloca o label em cima do input*/
+    margin-bottom: 20px; /*Substitui os <br (claude é um pai)>*/
+}
+/*Estilo de texto dos labels*/
+.campodousuario label, .campodesenha label {
+    font-weight: bold;
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 5px;
+}
+/*Estilo das caixas de digitar vulgo input*/
+.campodousuario input, .campodesenha input{
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.3; /*Mudança de cor suave*/
+}
+.botaologin{
+    width: 100%;
+    padding: 12px;
+    background-color: rgb(27, 228, 8);
+    color: black;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
