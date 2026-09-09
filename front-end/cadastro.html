@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cadatro de produto</title>
+</head>
+<body>
+    <main class="container">
+        <h2>Cadastro de produtos</h2>
+
+        <form id="formProdutos" action="#" method="post">
+            
+            <!--tabela dos produtos-->
+
+            <div class="form-group">
+                <label for="nome">produtos</label>
+                <input type="text"id="name" name="nome" placeholder="nome do produto" required>              
+            </div>
+
+            <!--tabela do (SKU)-->>
+            
+            <div class="form-group">
+                <label for="codigo">codigo (SKU)</label>
+                <input type="text" id="codigo" name="codigo" placeholder="digite o codigo" required>
+            </div>
+
+            <!--lista das categoria-->>
+
+            <div class="form-group">
+                <label for="categoria">categoria</label>
+                <select name="categoria" id="categoria">
+                    <option selected disabled>selecione a categoria</option>
+                    <option value="computadores">computadores</option>
+                    <option value="componentes">componentes</option>
+                    <option value="perifericos">perifericos</option>
+                    <option value="monitores">monitores</option>
+                    <option value="redes">redes</option>
+                    <option value="fontes">fontes</option>
+                    <option value="impressao">impressao</option>
+                    <option value="armazenamento">armazenamento/option>
+                    <option value="outros">outros</option>
+                </select>
+            </div>
+
+            <!--tabela dos preços-->>
+
+            <div class="form-group">
+                <label for="preço">preço (R$):</label>
+                <input type="number" id="preço" name="preço" step="0.01" min="0" placeholder="0,00" required>
+            </div>
+
+            <!--tabela da quantidade em estoque-->>
+            
+            <div class="form-group">
+                <label for="estoque">quantidade em estoque</label>
+                <input type="number" id="estoque" name="estoque" min="0" placeholder="0" required>
+            </div>
+
+            <!--tabela da descriçao do prudoto-->>
+
+            <div class="form-group">
+                <label for="descriçao">descriçao do produto</label>
+                <textarea name="" id="descriçao" name="descriçao" rows="4" placeholder="detalhes do produto"></textarea>
+            </div>
+
+            <!--botão para cadastra-->>
+
+            <button type="submit">cadastrar produto</button>
+
+        </form>
+
+    </main>
+    
+</body>
+</html>
